@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo-primeiro: #201b2c;
+    --roxo-segundo: #2f2841;
+    --roxo-terceiro: #514869;
+    --roxo-quarto: #2b134b;
+    --verde-primeiro: #77ffc0;
+    --verde-segundo: #00ff88;
+    --verde-terceiro: #00ff8052;
+    --branco-primeiro: #ffffff;
+    --branco-segundo: #f0ffffde;
+    --cinza-primeiro: #f0ffff94;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--roxo-primeiro);
+    color: var(--branco-primeiro);
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-top {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-image {
+    width: 50%;
+}
+
+.container-top-header {
+    background: var(--roxo-segundo);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    padding: 30px 0;
+}
+
+.container-top-header h1 {
+    color: var(--verde-primeiro);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container-down {
+    background: var(--roxo-terceiro);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.container-time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.container-time span {
+    font-size: 2rem;
+}
+
+.container-buttons {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn-action {
+    width: 100px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--roxo-quarto);
+    background: var(--verde-segundo);
+}
+
+.btn-action:hover {
+    transition: 0.3s;
+    transform: scale(1.07);
+}
+
+.btn-action:disabled {
+    color: var(--branco-primeiro);
+    background: var(--roxo-segundo);
+}
+
+@media (max-width: 500px) {
+    .container-top {
+        width: 90%;
+    }
+
+    .container-image {
+        width: 80%;
+    }
+
+    .container-down {
+        width: 90%;
+    }
+}
