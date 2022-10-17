@@ -1,4 +1,4 @@
-# Stopwatch JS
+# Stopwatch JS (demonstration)
 
 [Teste Aqui](https://iglisson.github.io/stopwatch)
 
